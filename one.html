@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Document</title>
+</head>
+<body>
+<input type="text" id="ans">
+<button onclick="myfunction(1)">1</button>
+<button onclick="myfunctiontwo()">Clear</button>
+<script>
+function myfunction(val){
+document.getElementById("ans").value+=val;
+}
+function myfunctiontwo(){
+var a=document.getElementById("ans").value;
+document.getElementById("ans").value=a.slice(0,-1);
+}
+
+</script>    
+</body>
+</html>
